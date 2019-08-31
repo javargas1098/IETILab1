@@ -21,19 +21,19 @@ export class TodoApp extends React.Component {
                 </label>
                     <input
                         type="text"
-                        id="text"
+                        id="texto"
                         onChange={this.handleChange}
                         value={this.state.text}
                     />
                     <input
                         type="number"
-                        id="number"
+                        id="prio"
                         onChange={this.handleChange}
                         value={this.state.priority}
                     />
                     <input
                         type="date"
-                        id="date"
+                        id="fecha"
                         onChange={this.handleChange}
                         value={this.state.dueDate}
                     />
@@ -46,9 +46,9 @@ export class TodoApp extends React.Component {
     }
 
     handleChange(e) {
-        this.setState({ text: document.getElementById('text').value })
-        this.setState({ priority: document.getElementById('number').value });;
-        this.setState({ dueDate: document.getElementById('date').value });;
+        this.setState({ text: document.getElementById('texto').value })
+        this.setState({ priority: document.getElementById('prio').value });;
+        this.setState({ dueDate: document.getElementById('fecha').value });;
     }
 
     handleSubmit(e) {
